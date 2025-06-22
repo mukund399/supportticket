@@ -39,7 +39,9 @@ The final output is a JSON object containing the original ticket ID, the routing
 
 The following diagram illustrates the high-level flow of a ticket through the system:
 
+<div align="center">
 ![Flow Chart](https://github.com/mukund399/supportticket/blob/main/assets/flow_chart.png)
+</dvi>
 
 ## LLM & Technology Stack
 
