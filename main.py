@@ -5,7 +5,7 @@ import os
 import time
 from agents.router import run_router
 from agents.orchestrator import route_to_solver
-from evaluation import calculate_metrics
+from agents.evaluation import calculate_metrics
 
 INPUT_FILE = "./evaluation/tickets_mini.json"
 OUTPUT_FILE = "results.json"
