@@ -41,7 +41,7 @@ The following diagram illustrates the high-level flow of a ticket through the sy
 
 <div align="center">
 ![Flow Chart](https://github.com/mukund399/supportticket/blob/main/assets/flow_chart.png)
-</dvi>
+</div>
 
 ## LLM & Technology Stack
 
