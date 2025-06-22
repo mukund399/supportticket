@@ -1,0 +1,14 @@
+{
+  "overall_performance": {
+    "total_tickets_processed": 12,
+    "average_processing_time_seconds": "2.38"
+  },
+  "router_evaluation": {
+    "routing_accuracy_percent": "91.67% (11/12)",
+    "urgency_accuracy_percent": "91.67% (11/12)"
+  },
+  "solver_evaluation": {
+    "solver_success_rate_percent": "100.00%",
+    "team_assignment_accuracy_percent": "83.33% (10/12)"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "ticket_id": "SUP-001",
+    "customer_tier": "free",
+    "subject": "This product is completely broken!!!",
+    "message": "Nothing works! I can't even log in. This is the worst software I've ever used. I'm",
+    "previous_tickets": 0,
+    "monthly_revenue": 0,
+    "account_age_days": 2,
+    "ground_truth_category": "Bugs",
+    "ground_truth_urgency": "High",
+    "ground_truth_team": "Backend"
+  },
+  {
+    "ticket_id": "SUP-002",
+    "customer_tier": "enterprise",
+    "subject": "Minor UI issue with dashboard",
+    "message": "Hi team, just noticed the dashboard numbers are slightly misaligned on mobile view",
+    "previous_tickets": 15,
+    "monthly_revenue": 25000,
+    "account_age_days": 730,
+    "ground_truth_category": "Miscellaneous",
+    "ground_truth_urgency": "Low",
+    "ground_truth_team": "UI/UX"
+  },
+  {
+    "ticket_id": "SUP-003",
+    "customer_tier": "premium",
+    "subject": "Feature Request: Bulk export",
+    "message": "We need bulk export functionality for our quarterly reports. Currently exporting o",
+    "previous_tickets": 5,
+    "monthly_revenue": 5000,
+    "account_age_days": 400,
+    "ground_truth_category": "Request",
+    "ground_truth_urgency": "Medium",
+    "ground_truth_team": "Backend"
+  },
+  {
+    "ticket_id": "SUP-004",
+    "customer_tier": "premium",
+    "subject": "API rate limits unclear",
+    "message": "Getting rate limited but documentation says we should have 1000 requests/hour. We'",
+    "previous_tickets": 8,
+    "monthly_revenue": 3000,
+    "account_age_days": 180,
+    "ground_truth_category": "Query",
+    "ground_truth_urgency": "Medium",
+    "ground_truth_team": "Customer Support"
+  }
+]

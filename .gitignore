@@ -1,0 +1,4 @@
+*odt
+.env
+__pycache__/
+venv/

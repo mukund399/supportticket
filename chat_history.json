@@ -1,0 +1,373 @@
+[
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-001",
+      "customer_tier": "free",
+      "subject": "This product is completely broken!!!",
+      "message": "Nothing works! I can't even log in. This is the worst software I've ever used. I'm",
+      "previous_tickets": 0,
+      "monthly_revenue": 0,
+      "account_age_days": 2,
+      "ground_truth_category": "Bugs",
+      "ground_truth_urgency": "High",
+      "ground_truth_team": "Backend"
+    },
+    "router_output": {
+      "category": "BUGS",
+      "urgency": "High",
+      "summary": "The user reports that they cannot log in and that the software is completely broken."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "BugSolver",
+      "data": {
+        "title": "Login Failure - Application unusable",
+        "reproduction_steps": [
+          "Try to log in to the application",
+          "Observe the error message or behavior"
+        ],
+        "severity": "High",
+        "assigned_team": "General Triage"
+      }
+    },
+    "processing_time_seconds": 2.063006639480591
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-002",
+      "customer_tier": "enterprise",
+      "subject": "Minor UI issue with dashboard",
+      "message": "Hi team, just noticed the dashboard numbers are slightly misaligned on mobile view",
+      "previous_tickets": 15,
+      "monthly_revenue": 25000,
+      "account_age_days": 730,
+      "ground_truth_category": "Miscellaneous",
+      "ground_truth_urgency": "Low",
+      "ground_truth_team": "UI/UX"
+    },
+    "router_output": {
+      "category": "BUGS",
+      "urgency": "Low",
+      "summary": "UI misalignment on mobile dashboard"
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "BugSolver",
+      "data": {
+        "title": "UI misalignment on mobile dashboard (SUP-002)",
+        "reproduction_steps": [
+          "1. Open the application on a mobile device.",
+          "2. Navigate to the dashboard.",
+          "3. Observe the alignment of the numbers displayed."
+        ],
+        "severity": "Low",
+        "assigned_team": "UI/UX"
+      }
+    },
+    "processing_time_seconds": 2.9629499912261963
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-003",
+      "customer_tier": "premium",
+      "subject": "Feature Request: Bulk export",
+      "message": "We need bulk export functionality for our quarterly reports. Currently exporting o",
+      "previous_tickets": 5,
+      "monthly_revenue": 5000,
+      "account_age_days": 400,
+      "ground_truth_category": "Request",
+      "ground_truth_urgency": "Medium",
+      "ground_truth_team": "Backend"
+    },
+    "router_output": {
+      "category": "REQUEST",
+      "urgency": "Low",
+      "summary": "User requests bulk export functionality for quarterly reports."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "FeatureRequestSolver",
+      "data": {
+        "feature_summary": "User requests bulk export functionality for quarterly reports.",
+        "user_goal": "To improve efficiency of generating quarterly reports.",
+        "business_impact": "High",
+        "assigned_team": "Backend"
+      }
+    },
+    "processing_time_seconds": 3.2828540802001953
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-004",
+      "customer_tier": "premium",
+      "subject": "API rate limits unclear",
+      "message": "Getting rate limited but documentation says we should have 1000 requests/hour. We'",
+      "previous_tickets": 8,
+      "monthly_revenue": 3000,
+      "account_age_days": 180,
+      "ground_truth_category": "Query",
+      "ground_truth_urgency": "Medium",
+      "ground_truth_team": "Customer Support"
+    },
+    "router_output": {
+      "category": "QUERY",
+      "urgency": "Medium",
+      "summary": "Customer reports API rate limit discrepancies with documentation."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "QuerySolver",
+      "data": {
+        "customer_facing_response": "Hello! Thank you for reaching out. I understand you are experiencing discrepancies with your API rate limits. We sincerely apologize for any inconvenience this may cause. Our documentation states a limit of 1000 requests per hour, however, it seems you are encountering rate limits sooner. To better understand and resolve this issue, could you please provide more details such as timestamps of when these limits were hit, the specific API endpoints used, and any error messages you received? This will help us investigate the issue more efficiently. In the meantime, we can temporarily increase your rate limit to ensure uninterrupted service.  We appreciate your understanding and patience while we look into this.",
+        "is_resolved": false,
+        "assigned_team": "Customer Support"
+      }
+    },
+    "processing_time_seconds": 3.996005058288574
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-005",
+      "customer_tier": "enterprise",
+      "subject": "Urgent: Security vulnerability?",
+      "message": "Our security team flagged that your API responses include internal server paths in",
+      "previous_tickets": 20,
+      "monthly_revenue": 50000,
+      "account_age_days": 900,
+      "ground_truth_category": "Security",
+      "ground_truth_urgency": "High",
+      "ground_truth_team": "Security"
+    },
+    "router_output": {
+      "category": "SECURITY",
+      "urgency": "High",
+      "summary": "API responses expose internal server paths, potentially creating a security vulnerability."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "SecuritySolver",
+      "data": {
+        "alert_summary": "API responses expose internal server paths, potentially creating a security vulnerability.",
+        "severity": "High",
+        "recommended_action": "Immediately investigate and fix the API response to remove the exposure of internal server paths.  Implement measures to prevent similar vulnerabilities in the future.",
+        "assigned_team": "Security"
+      }
+    },
+    "processing_time_seconds": 2.0157113075256348
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-006",
+      "customer_tier": "enterprise",
+      "subject": "Critical: Production system down - API returning 500",
+      "message": "Our main application is completely down. All API calls are returning a 500 error. This is affecting all of our customers. Please treat this as urgent.",
+      "previous_tickets": 10,
+      "monthly_revenue": 50000,
+      "account_age_days": 730,
+      "ground_truth_category": "Bugs",
+      "ground_truth_urgency": "High",
+      "ground_truth_team": "Backend"
+    },
+    "router_output": {
+      "category": "BUGS",
+      "urgency": "High",
+      "summary": "Production system is down; API returning 500 errors, affecting all customers."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "BugSolver",
+      "data": {
+        "title": "Production System Down - API returning 500 errors",
+        "reproduction_steps": [
+          "1. Try to make any API call to the production system.",
+          "2. Observe the 500 error response."
+        ],
+        "severity": "Critical",
+        "assigned_team": "General Triage"
+      }
+    },
+    "processing_time_seconds": 2.0133144855499268
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-007",
+      "customer_tier": "free",
+      "subject": "How do I change my email address?",
+      "message": "Hi, I can't find the option to update my email in the account settings. Can you help?",
+      "previous_tickets": 0,
+      "monthly_revenue": 0,
+      "account_age_days": 15,
+      "ground_truth_category": "Query",
+      "ground_truth_urgency": "Low",
+      "ground_truth_team": "Customer Support"
+    },
+    "router_output": {
+      "category": "QUERY",
+      "urgency": "Low",
+      "summary": "User needs guidance on how to change their email address."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "QuerySolver",
+      "data": {
+        "customer_facing_response": "Hi there! I can certainly help you with that.  To change your email address, please follow these steps: [insert steps here]. If you continue to experience issues, please don't hesitate to contact us again. ",
+        "is_resolved": true,
+        "assigned_team": "Customer Support"
+      }
+    },
+    "processing_time_seconds": 2.1693637371063232
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-008",
+      "customer_tier": "premium",
+      "subject": "Feature Idea: Dark Mode",
+      "message": "It would be great if you could add a dark mode to the dashboard. It would be much easier on the eyes.",
+      "previous_tickets": 2,
+      "monthly_revenue": 1500,
+      "account_age_days": 250,
+      "ground_truth_category": "Request",
+      "ground_truth_urgency": "Low",
+      "ground_truth_team": "UI/UX"
+    },
+    "router_output": {
+      "category": "REQUEST",
+      "urgency": "Low",
+      "summary": "User requests a dark mode feature for the dashboard."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "FeatureRequestSolver",
+      "data": {
+        "feature_summary": "User requests a dark mode feature for the dashboard to improve user experience and reduce eye strain.",
+        "user_goal": "To improve user experience and reduce eye strain by adding a dark mode to the dashboard.",
+        "business_impact": "Medium",
+        "assigned_team": "UI/UX"
+      }
+    },
+    "processing_time_seconds": 1.9955723285675049
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-009",
+      "customer_tier": "enterprise",
+      "subject": "Security Alert: Suspicious login attempt from unknown IP",
+      "message": "I received an alert about a login from an IP address I don't recognize. Can you please investigate and lock down my account immediately?",
+      "previous_tickets": 1,
+      "monthly_revenue": 25000,
+      "account_age_days": 400,
+      "ground_truth_category": "Security",
+      "ground_truth_urgency": "High",
+      "ground_truth_team": "Security"
+    },
+    "router_output": {
+      "category": "SECURITY",
+      "urgency": "High",
+      "summary": "Suspicious login attempt from an unrecognized IP address."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "SecuritySolver",
+      "data": {
+        "alert_summary": "Suspicious login attempt from an unrecognized IP address.  High-priority alert for Enterprise customer (SUP-009).",
+        "severity": "High",
+        "recommended_action": "Immediately investigate and potentially lock the customer account.  Additional steps may include IP address blocking and a security audit.",
+        "assigned_team": "Security"
+      }
+    },
+    "processing_time_seconds": 2.0357255935668945
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-010",
+      "customer_tier": "premium",
+      "subject": "Login button not working on Firefox",
+      "message": "When I try to click the login button on my Firefox browser, nothing happens. It works fine on Chrome.",
+      "previous_tickets": 5,
+      "monthly_revenue": 2000,
+      "account_age_days": 180,
+      "ground_truth_category": "Bugs",
+      "ground_truth_urgency": "Medium",
+      "ground_truth_team": "Frontend"
+    },
+    "router_output": {
+      "category": "BUGS",
+      "urgency": "Medium",
+      "summary": "The login button is non-functional on Firefox."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "BugSolver",
+      "data": {
+        "title": "Login button not working on Firefox",
+        "reproduction_steps": [
+          "1. Open Firefox browser",
+          "2. Go to the login page",
+          "3. Click the login button"
+        ],
+        "severity": "High",
+        "assigned_team": "Frontend"
+      }
+    },
+    "processing_time_seconds": 1.9701642990112305
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-011",
+      "customer_tier": "free",
+      "subject": "Typo in your documentation",
+      "message": "On your API docs page for the `/users` endpoint, the word 'parameter' is misspelled as 'paramater'. Just wanted to let you know!",
+      "previous_tickets": 1,
+      "monthly_revenue": 0,
+      "account_age_days": 90,
+      "ground_truth_category": "Correctness",
+      "ground_truth_urgency": "Low",
+      "ground_truth_team": "Documentation"
+    },
+    "router_output": {
+      "category": "CORRECTNESS",
+      "urgency": "Low",
+      "summary": "The word \\\"parameter\\\" is misspelled as \\\"paramater\\\" on the API docs page for the `/users` endpoint."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "CorrectnessSolver",
+      "data": {
+        "identified_error": "The word \\\"parameter\\\" is misspelled as \\\"paramater\\\" on the API documentation page for the `/users` endpoint.",
+        "suggested_correction": "Replace \\\"paramater\\\" with \\\"parameter\\\"",
+        "assigned_team": "Documentation"
+      }
+    },
+    "processing_time_seconds": 2.1049890518188477
+  },
+  {
+    "original_ticket": {
+      "ticket_id": "SUP-012",
+      "customer_tier": "enterprise",
+      "subject": "Request: Integration with Salesforce",
+      "message": "We would like to request a native integration with Salesforce to automatically sync our customer data.",
+      "previous_tickets": 8,
+      "monthly_revenue": 30000,
+      "account_age_days": 500,
+      "ground_truth_category": "Request",
+      "ground_truth_urgency": "Low",
+      "ground_truth_team": "Backend"
+    },
+    "router_output": {
+      "category": "REQUEST",
+      "urgency": "Low",
+      "summary": "Customer requests native Salesforce integration for customer data syncing."
+    },
+    "solver_output": {
+      "status": "SUCCESS",
+      "solver": "FeatureRequestSolver",
+      "data": {
+        "feature_summary": "Customer requests native Salesforce integration for customer data syncing.",
+        "user_goal": "Automate customer data synchronization between our platform and Salesforce.",
+        "business_impact": "High",
+        "assigned_team": "Backend"
+      }
+    },
+    "processing_time_seconds": 1.8997843265533447
+  }
+]
