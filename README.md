@@ -40,8 +40,9 @@ The final output is a JSON object containing the original ticket ID, the routing
 The following diagram illustrates the high-level flow of a ticket through the system:
 
 <div align="center">
-![Flow Chart](https://github.com/mukund399/supportticket/blob/main/assets/flow_chart.png)
+    <img src="https://raw.githubusercontent.com/mukund399/supportticket/refs/heads/main/assets/flow_chart.png", alt="Flow Chart">
 </div>
+
 
 ## LLM & Technology Stack
 
@@ -103,21 +104,19 @@ This PoC lays the groundwork for a more sophisticated AI-powered support system.
 ## Project Structure
 
 
-your-name-case-study/
-├── main.py # Main script to run a batch of sample tickets
-├── agents/ # Core AI logic
-│ ├── init.py
-│ ├── router.py # Handles initial ticket analysis and routing slip generation
-│ ├── orchestrator.py # Routes tickets to appropriate solvers based on category
-│ └── solvers.py # Contains specialized AI agents for different ticket types
-├── evaluation/ # For scripts/notebooks evaluating model performance
-├── docs/ # For detailed documentation, diagrams
-├── .env.example # Example environment file for API keys
-├── requirements.txt # Python dependencies
-├── ai_chat_history.txt # Full AI conversation history for this project
-└── README.md # This file
+your-name-case-study<br>
+├── main.py # Main script to run a batch of sample tickets<br>
+├── agents/ # Core AI logic<br>
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── router.py<br>
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── orchestrator.py<br>
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── solvers.py<br>
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── evaluation.py<br>
+├── evaluation/ <br>
+├── docs/ <br>
+├── requi   rements.txt <br>
+├── ai_chat_history.txt <br>
+└── README.md<br>
 
-Generated code
 ## Setup
 
 1.  **Clone the repository:**
@@ -137,10 +136,10 @@ Generated code
     pip install -r requirements.txt
     ```
 
-4.  **Set up environment variables:**
-    Copy `.env.example` to a new file named `.env`:
+4.  **Set up environment variables:**<br>
+    Make a `.env` file to house google-api-key:
     ```bash
-    cp .env.example .env
+    "GOOGLE_API_KEY="YOUR_API_KEY"
     ```
     Edit the `.env` file and add your Google Cloud credentials or API key. For `google-gla:gemini-1.5-flash`, this typically involves:
     *   Ensuring you have Application Default Credentials (ADC) set up by running `gcloud auth application-default login`.
@@ -153,24 +152,4 @@ Execute the `main.py` script to process the sample tickets defined within it:
 
 ```bash
 python main.py
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
-
-The script will print detailed output for each ticket, including the routing slip and the solver's structured response.
-
-License
-
-(Consider adding a license, e.g., MIT License. If so, add a LICENSE file and uncomment the line below)
-
-<!-- This project is licensed under the MIT License - see the LICENSE file for details. -->
-
-Generated code
-This README is now much more comprehensive and should serve well for your case study! Remember to replace `<your-repo-url>` with the actual URL once you host it on GitHub.
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
+```
